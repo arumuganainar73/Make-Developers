@@ -1,0 +1,23 @@
+{
+  "npmScope": "makedevelopers",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "makedevelopers": {
+      "tags": []
+    },
+    "makedevelopers-e2e": {
+      "tags": []
+    },
+    "makedev-javascript": {
+      "tags": [
+        "team:makedevsmart"
+      ]
+    }
+  }
+}
