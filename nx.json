@@ -18,6 +18,26 @@
       "tags": [
         "team:makedevsmart"
       ]
+    },
+    "makedev-jquery": {
+      "tags": [
+        "team:makedevsmart"
+      ]
+    },
+    "makedev-angularjs": {
+      "tags": [
+        "team:makedevsmart"
+      ]
+    },
+    "makedev-angular": {
+      "tags": [
+        "team:makedevsmart"
+      ]
+    },
+    "makedev-nodejs": {
+      "tags": [
+        "team:makedevsmart"
+      ]
     }
   }
 }

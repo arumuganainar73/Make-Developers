@@ -18,6 +18,18 @@
     "paths": {
       "@makedevelopers/makedev/javascript": [
         "libs/makedev/javascript/src/index.ts"
+      ],
+      "@makedevelopers/makedev/jquery": [
+        "libs/makedev/jquery/src/index.ts"
+      ],
+      "@makedevelopers/makedev/angularjs": [
+        "libs/makedev/angularjs/src/index.ts"
+      ],
+      "@makedevelopers/makedev/angular": [
+        "libs/makedev/angular/src/index.ts"
+      ],
+      "@makedevelopers/makedev/nodejs": [
+        "libs/makedev/nodejs/src/index.ts"
       ]
     }
   },

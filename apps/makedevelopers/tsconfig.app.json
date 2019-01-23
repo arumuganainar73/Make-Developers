@@ -9,6 +9,11 @@
     "**/*.spec.ts"
   ],
   "include": [
-    "**/*.ts"
+    "**/*.ts",
+    "../../libs/makedev/javascript/src/index.ts",
+    "../../libs/makedev/jquery/src/index.ts",
+    "../../libs/makedev/angularjs/src/index.ts",
+    "../../libs/makedev/angular/src/index.ts",
+    "../../libs/makedev/nodejs/src/index.ts"
   ]
 }

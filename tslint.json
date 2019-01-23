@@ -4,12 +4,18 @@
     "node_modules/@nrwl/schematics/src/tslint"
   ],
   "rules": {
+    "no-duplicate-variable": true,
+    "no-unused-variable": [
+      true
+    ],
+    "curly": true,
     "arrow-return-shorthand": true,
     "callable-types": true,
     "class-name": true,
     "deprecation": {
       "severity": "warn"
     },
+    "eofline": true,
     "forin": true,
     "import-blacklist": [
       true,
@@ -21,10 +27,15 @@
       true,
       {
         "order": [
-          "static-field",
-          "instance-field",
-          "static-method",
-          "instance-method"
+          "public-static-field",
+          "public-instance-field",
+          "public-constructor",
+          "private-static-field",
+          "private-instance-field",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
         ]
       }
     ],
@@ -38,20 +49,41 @@
       "timeEnd",
       "trace"
     ],
+    "no-consecutive-blank-lines": true,
+    "no-any": false,
+    "no-var-requires": true,
     "no-construct": true,
+    "no-conditional-assignment": true,
+    "no-duplicate-switch-case": true,
     "no-debugger": true,
     "no-duplicate-super": true,
-    "no-empty": false,
+    "no-empty": true,
     "no-empty-interface": true,
     "no-eval": true,
     "no-inferrable-types": [
       true,
       "ignore-params"
     ],
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
     "no-misused-new": true,
     "no-non-null-assertion": true,
-    "no-shadowed-variable": true,
-    "no-string-literal": false,
+    "no-shadowed-variable": [
+      true,
+      {
+        "class": true,
+        "enum": true,
+        "function": true,
+        "interface": false,
+        "namespace": true,
+        "typeAlias": false,
+        "typeParameter": false
+      }
+    ],
+    "no-string-literal": true,
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
     "no-unnecessary-initializer": true,
@@ -60,7 +92,12 @@
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
     "prefer-const": true,
+    "prefer-conditional-expression": true,
     "radix": true,
+    "semicolon": [
+      true,
+      "always"
+    ],
     "triple-equals": [
       true,
       "allow-null-check"
@@ -94,9 +131,10 @@
       true,
       {
         "allow": [],
-        "depConstraints": [
-          { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] }
-        ]
+        "depConstraints": [{
+          "sourceTag": "*",
+          "onlyDependOnLibsWithTags": ["*"]
+        }]
       }
     ]
   }

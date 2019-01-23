@@ -161,6 +161,146 @@
           }
         }
       }
+    },
+    "makedev-jquery": {
+      "root": "libs/makedev/jquery",
+      "sourceRoot": "libs/makedev/jquery/src",
+      "projectType": "library",
+      "prefix": "makedev",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/makedev/jquery/tsconfig.lib.json",
+            "project": "libs/makedev/jquery/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/makedev/jquery/src/test.ts",
+            "tsConfig": "libs/makedev/jquery/tsconfig.spec.json",
+            "karmaConfig": "libs/makedev/jquery/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/makedev/jquery/tsconfig.lib.json",
+              "libs/makedev/jquery/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "makedev-angularjs": {
+      "root": "libs/makedev/angularjs",
+      "sourceRoot": "libs/makedev/angularjs/src",
+      "projectType": "library",
+      "prefix": "makedev",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/makedev/angularjs/tsconfig.lib.json",
+            "project": "libs/makedev/angularjs/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/makedev/angularjs/src/test.ts",
+            "tsConfig": "libs/makedev/angularjs/tsconfig.spec.json",
+            "karmaConfig": "libs/makedev/angularjs/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/makedev/angularjs/tsconfig.lib.json",
+              "libs/makedev/angularjs/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "makedev-angular": {
+      "root": "libs/makedev/angular",
+      "sourceRoot": "libs/makedev/angular/src",
+      "projectType": "library",
+      "prefix": "makedev",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/makedev/angular/tsconfig.lib.json",
+            "project": "libs/makedev/angular/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/makedev/angular/src/test.ts",
+            "tsConfig": "libs/makedev/angular/tsconfig.spec.json",
+            "karmaConfig": "libs/makedev/angular/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/makedev/angular/tsconfig.lib.json",
+              "libs/makedev/angular/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "makedev-nodejs": {
+      "root": "libs/makedev/nodejs",
+      "sourceRoot": "libs/makedev/nodejs/src",
+      "projectType": "library",
+      "prefix": "makedev",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/makedev/nodejs/tsconfig.lib.json",
+            "project": "libs/makedev/nodejs/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/makedev/nodejs/src/test.ts",
+            "tsConfig": "libs/makedev/nodejs/tsconfig.spec.json",
+            "karmaConfig": "libs/makedev/nodejs/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/makedev/nodejs/tsconfig.lib.json",
+              "libs/makedev/nodejs/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
