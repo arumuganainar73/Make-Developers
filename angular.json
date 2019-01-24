@@ -301,6 +301,76 @@
           }
         }
       }
+    },
+    "makedev-html": {
+      "root": "libs/makedev/html",
+      "sourceRoot": "libs/makedev/html/src",
+      "projectType": "library",
+      "prefix": "makedev",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/makedev/html/tsconfig.lib.json",
+            "project": "libs/makedev/html/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/makedev/html/src/test.ts",
+            "tsConfig": "libs/makedev/html/tsconfig.spec.json",
+            "karmaConfig": "libs/makedev/html/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/makedev/html/tsconfig.lib.json",
+              "libs/makedev/html/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "makedev-css": {
+      "root": "libs/makedev/css",
+      "sourceRoot": "libs/makedev/css/src",
+      "projectType": "library",
+      "prefix": "makedev",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/makedev/css/tsconfig.lib.json",
+            "project": "libs/makedev/css/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/makedev/css/src/test.ts",
+            "tsConfig": "libs/makedev/css/tsconfig.spec.json",
+            "karmaConfig": "libs/makedev/css/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/makedev/css/tsconfig.lib.json",
+              "libs/makedev/css/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

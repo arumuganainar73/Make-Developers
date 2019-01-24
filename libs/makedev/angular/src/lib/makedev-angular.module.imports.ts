@@ -8,9 +8,9 @@ import {
   MatTableModule,
   MatDividerModule
 } from '@angular/material';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
-import {MatChipsModule} from '@angular/material/chips';
+import { MatChipsModule } from '@angular/material/chips';
 export const MaterialModules = [
   MatToolbarModule,
   MatChipsModule,

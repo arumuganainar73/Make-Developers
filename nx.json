@@ -38,6 +38,16 @@
       "tags": [
         "team:makedevsmart"
       ]
+    },
+    "makedev-html": {
+      "tags": [
+        "team:makedevsmart"
+      ]
+    },
+    "makedev-css": {
+      "tags": [
+        "team:makedevsmart"
+      ]
     }
   }
 }

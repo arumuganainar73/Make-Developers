@@ -8,9 +8,8 @@ describe('AngularjsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AngularjsComponent ]
-    })
-    .compileComponents();
+      declarations: [AngularjsComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

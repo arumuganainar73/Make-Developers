@@ -18,7 +18,7 @@ import { MaterialModules } from './app.module.imports';
     HttpClientModule,
     FormsModule,
     NxModule.forRoot(),
-   ...MaterialModules,
+    ...MaterialModules,
     AppRoutingModule
   ],
   providers: [],

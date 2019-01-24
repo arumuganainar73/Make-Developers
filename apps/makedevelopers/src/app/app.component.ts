@@ -1,5 +1,5 @@
-import {ChangeDetectorRef,OnDestroy,Component } from '@angular/core';
-import {MediaMatcher} from '@angular/cdk/layout';
+import { ChangeDetectorRef, OnDestroy, Component } from '@angular/core';
+import { MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
   selector: 'makedev-root',
@@ -7,16 +7,25 @@ import {MediaMatcher} from '@angular/cdk/layout';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnDestroy {
- mobileQuery: MediaQueryList;
+  mobileQuery: MediaQueryList;
 
-  fillerNav = Array.from({length: 5}, (_, i) => `Nav Item ${i + 1}`);
-
-  fillerContent = Array.from({length: 5}, () =>
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-       laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-       voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`);
+  fillerNav = [
+    {
+      title: 'Javascript'
+    },
+    {
+      title: 'Jquery'
+    },
+    {
+      title: 'Angularjs'
+    },
+    {
+      title: 'Angular'
+    },
+    {
+      title: 'Nodejs'
+    }
+  ];
 
   private _mobileQueryListener: () => void;
 
@@ -30,5 +39,7 @@ export class AppComponent implements OnDestroy {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
+  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h =>
+    h.test(window.location.host)
+  );
 }

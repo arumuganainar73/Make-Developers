@@ -4,14 +4,15 @@ import { AngularComponent } from './angular/angular.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [CommonModule,
-   RouterModule.forChild([
+  imports: [
+    CommonModule,
+    RouterModule.forChild([
       {
         path: '',
         component: AngularComponent // parent component of screen 1
       }
     ])
-    ],
+  ],
   declarations: [AngularComponent],
   exports: [AngularComponent]
 })

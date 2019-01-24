@@ -30,6 +30,12 @@
       ],
       "@makedevelopers/makedev/nodejs": [
         "libs/makedev/nodejs/src/index.ts"
+      ],
+      "@makedevelopers/makedev/html": [
+        "libs/makedev/html/src/index.ts"
+      ],
+      "@makedevelopers/makedev/css": [
+        "libs/makedev/css/src/index.ts"
       ]
     }
   },

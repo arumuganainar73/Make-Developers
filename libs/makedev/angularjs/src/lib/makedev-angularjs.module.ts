@@ -4,14 +4,16 @@ import { AngularjsComponent } from './angularjs/angularjs.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [CommonModule,
-   RouterModule.forChild([
+  imports: [
+    CommonModule,
+    RouterModule.forChild([
       {
         path: '',
         component: AngularjsComponent // parent component of screen 1
       }
-    ])],
+    ])
+  ],
   declarations: [AngularjsComponent],
-   exports: [AngularjsComponent]
+  exports: [AngularjsComponent]
 })
 export class MakedevAngularjsModule {}

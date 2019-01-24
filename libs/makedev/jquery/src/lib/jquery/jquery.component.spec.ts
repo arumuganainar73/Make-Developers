@@ -8,9 +8,8 @@ describe('JqueryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ JqueryComponent ]
-    })
-    .compileComponents();
+      declarations: [JqueryComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

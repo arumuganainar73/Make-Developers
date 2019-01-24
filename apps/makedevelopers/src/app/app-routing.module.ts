@@ -5,8 +5,7 @@ export const routes: Routes = [
   {
     path: 'javascript',
     data: { preload: true },
-    loadChildren:
-      '@makedevelopers/makedev/javascript#MakedevJavascriptModule'
+    loadChildren: '@makedevelopers/makedev/javascript#MakedevJavascriptModule'
   },
   {
     path: 'jquery',
@@ -21,7 +20,7 @@ export const routes: Routes = [
     loadChildren: '@makedevelopers/makedev/angular#MakedevAngularModule'
   },
   {
-    path:'nodejs',
+    path: 'nodejs',
     loadChildren: '@makedevelopers/makedev/nodejs#MakedevNodejsModule'
   },
 
@@ -38,9 +37,9 @@ export const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, {     
+    RouterModule.forRoot(routes, {
       useHash: true
-    }) 
+    })
   ],
   providers: [],
   exports: [RouterModule]
